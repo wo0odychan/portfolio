@@ -39,9 +39,10 @@
     flex: 1;
 }
 
+/* 
 * {
     outline: 1px solid peru;
-}
+} */
 
 .header {
     position: fixed;
@@ -465,4 +466,72 @@
 
 .training .content .tr_box figure:hover img {
     transform: scale(1.1);
+}
+
+.profile {
+    background: url(../images/point_dot.png) no-repeat 115.4%;
+}
+
+.profile .content {
+    gap: 0;
+}
+
+.profile .content .pic {
+    background: url(../images/point_dot.png);
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.profile .content .pic figure {
+    margin: 0 0 16px 0;
+}
+
+.profile .content .pic img {
+    border-radius: 50% 50% 0 0;
+}
+
+.profile .content .pic .txt {
+    font-size: 18px;
+}
+
+.profile .content .pic .txt a {
+    display: block;
+    line-height: 28px;
+
+}
+
+.profile .content .pic .txt .btn {
+    margin: 8px 0 0 0;
+    display: inline-block;
+}
+
+.profile .content .prf {
+    background: #fff;
+    padding: 48px 24px;
+}
+
+.profile .content .prf h2 {
+    /* color: transparent;
+    background: url(../images/point.png) left;
+    -webkit-background-clip: text; */
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0 0 20px 0;
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid #222;
+}
+
+.profile .content .prf .pf_list li {
+    font-size: 24px;
+    color: #666;
+}
+
+.profile .content .prf .pf_list li~li {
+    margin: 16px 0 0 0;
+}
+
+.profile .content .prf .pf_list li span {
+    font-weight: 600;
+    color: #222;
+    margin: 0 8px 0 0;
 }
