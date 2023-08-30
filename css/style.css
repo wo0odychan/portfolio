@@ -14,7 +14,7 @@
     display: inline-block;
     font-size: 20px;
     font-weight: 600;
-    padding: 4px 20px;
+    padding: 8px 24px 6px 24px;
 }
 
 .btn.w {
@@ -164,7 +164,7 @@
 .slide01 {
     position: relative;
     /* background: var(--rc); */
-    background: linear-gradient(90deg, var(--rc) 60%, var(--mc));
+    background: linear-gradient(90deg, var(--rc) 70%, #f0f0f0);
 }
 
 /* .slide01::before {
@@ -192,7 +192,7 @@
 
 .slide02 {
     position: relative;
-    background: linear-gradient(90deg, var(--mc) 60%, var(--pc));
+    background: linear-gradient(90deg, #f0f0f0 70%, var(--mc));
 }
 
 /* .slide02::before {
@@ -220,7 +220,7 @@
 
 .slide03 {
     position: relative;
-    background: linear-gradient(90deg, var(--pc)70%, var(--fc));
+    background: linear-gradient(90deg, var(--mc)70%, #ece4bd);
 }
 
 
@@ -248,7 +248,7 @@
 
 .slide04 {
     position: relative;
-    background: linear-gradient(90deg, var(--fc)60%, #cecfff);
+    background: linear-gradient(90deg, #ece4bd 60%, var(--fc));
 }
 
 /* 
@@ -276,7 +276,7 @@
 
 .slide05 {
     position: relative;
-    background: linear-gradient(90deg, #cecfff 60%, var(--rc));
+    background: linear-gradient(90deg, var(--fc)60%, #DEECFC);
 }
 
 .slide05::before {
@@ -286,7 +286,7 @@
     right: -25%;
     width: 790px;
     height: 650px;
-    border: 20px solid #ffffffb2;
+    border: 20px solid #ffffff8f;
     border-radius: 50%;
 }
 
@@ -304,10 +304,9 @@
 
 .slide .txt_box {
     display: flex;
-    background: rgba(255, 255, 255, 0.7);
+    /* background: rgba(255, 255, 255, 0.7); */
     align-items: center;
     align-self: center;
-    padding: 48px 36px;
 }
 
 .slide .txt_box .top {
@@ -315,28 +314,30 @@
 }
 
 .slide .txt_box .top strong {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 800;
-    color: var(--pc);
-    margin: 0 8px 0 0;
+    color: #fff;
+    text-shadow: 4px 2px 1px var(--pc);
 }
 
+/* 
 .slide .txt_box .top span {
     font-size: 24px;
     font-weight: 600;
-}
+} */
 
 .slide .txt_box .bot {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #999;
     padding: 0 0 8px 0;
     margin: 0 0 20px 0;
+    width: 450px;
 }
 
 .slide .txt_box .bot h2 {
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 800;
 }
 
@@ -355,12 +356,12 @@
 
 .slide .txt_box .tool li {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 24px;
     color: #666;
 }
 
 .slide .txt_box .tool li span {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0 8px 0 0;
     color: #222;
@@ -457,7 +458,6 @@
 
 .training .content .tr_box figure {
     overflow: hidden;
-
 }
 
 .training .content .tr_box figure img {
@@ -534,4 +534,12 @@
     font-weight: 600;
     color: #222;
     margin: 0 8px 0 0;
+}
+
+.profile .content .prf .pf_list li>ul {
+    margin: 8px 0 0 50px;
+}
+
+.profile .content .prf .pf_list li>ul li~li {
+    margin: 16px 0 0 0;
 }
