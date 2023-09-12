@@ -7,7 +7,11 @@
     <title>왕우진 포트폴리오</title>
     <link rel="shortcut icon" href="./images/favicon.png">
 
+
+
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
     <script src="./js/fullpage.min.js"></script>
     <script src="./js/custom.js" defer></script>
 
@@ -20,12 +24,12 @@
 <body>
 
     <header class="header">
-        <div class="inner header_wrap">
-            <h1>
-                <a href="">
+        <div class="inner header_wrap gls">
+            <!-- <h1>
+                <a href="https://wo0odychan.github.io/">
                     <img src="./images/logo.png" alt="">
                 </a>
-            </h1>
+            </h1> -->
             <nav class="gnb">
                 <ul class="d_flex">
                     <li>
@@ -50,28 +54,34 @@
                     </li>
                 </ul>
             </nav>
+            <span class="material-symbols-outlined mopen">
+                menu
+            </span>
         </div>
     </header>
     <div id="main" role="main">
-        <section class="section home">
-            <div class="inner slogan">
-                <div class="left">
-                    <strong>WANG WOO JIN</strong>
-                    <span>안녕하세요.<br />신입 웹 퍼블리셔 왕우진입니다.</span>
+        <section class="section home sec">
+            <div class="slogan">
+                <div class="left inner">
+                    <div class="name">
+                        <strong class="gr">안녕하세요. 신입 웹 퍼블리셔 왕우진입니다.</strong>
+                    </div>
+                    <div class="name">
+                        <span class="gr gr01">WANG WOO JIN</span>
+                    </div>
                 </div>
                 <div class="right">
-                    <video class="bg_video" autoplay loop muted>
-                        <source src="./images/bubbles_-_75587 (720p).mp4" type="video/mp4">
-                    </video>
-                    <div class="text">
-                        <h2>2023 UI/UX DESIGN</h2>
+                    <div class="port">
+                        <h2>PORT<br />FOLIO</h2>
                     </div>
                 </div>
             </div>
         </section>
         <section id="slide_move" class="section project">
-
-            <div class="slide slide01">
+            <div class="scroll">
+                <span>옆으로 넘겨주세요</span>
+            </div>
+            <div class="slide slide01 ">
 
                 <div class="inner content">
                     <div class="txt_box">
@@ -82,26 +92,36 @@
                             </div>
                             <div class="tool">
                                 <ul>
-                                    <li><span>Tool</span> HTML, CSS, JavaScript-JQuery, Slick, XEicon</li>
-                                    <li><span>Font</span> Noto Sans KR</li>
-                                    <li><span>Color</span></li>
+                                    <li><strong>Tool</strong><span>HTML, CSS, JavaScript-JQuery, Slick, XEicon</span>
+                                    </li>
+                                    <li><strong>Font</strong><span>Noto Sans KR</span> </li>
+                                    <li><strong>Color</strong>
+                                        <span class="color co01"></span>
+                                        <span class="color co02"></span>
+                                        <span class="color co03"></span>
+                                    </li>
+                                    <li class="info">Info <p>기존 사이트의 MainSlide의 텍스트를 가독성 있게 변경하였고
+                                            허쉬만의 컨텐츠를 한눈에 볼 수 있게 큰 박스에 담아 Hover 시 해당 컨텐츠의 내용과 자세히 볼 수 있는 버튼이 나타나게끔
+                                            하였습니다.
+                                            허쉬의 히스토리는 탭메뉴를 사용하여 쉽게 볼 수 있도록 만들었습니다.
                                 </ul>
                             </div>
                             <div class="link">
-                                <div class="btn"><a href="">WEB</a></div>
-                                <div class="btn"><a href="">MOBILE</a></div>
-                                <div class="btn w"><a href="">FIGMA</a></div>
+                                <div class="btn"><a href="https://wo0odychan.github.io/project05/"
+                                        target="_blank">WEB</a></div>
+                                <!-- <div class="btn"><a href="">MOBILE</a></div> -->
+                                <!-- <div class="btn w"><a href="#!$">FIGMA</a></div> -->
                             </div>
                         </div>
                     </div>
-                    <div class="img_box">
+                    <div class="img_box od">
                         <div class="web">
-                            <a href="">
-                                <img src="./images/hersheyW.PNG" alt="">
+                            <a href="https://wo0odychan.github.io/project05/" target="_blank">
+                                <img src="./images/hersheyW.png" alt="">
                             </a>
                         </div>
                         <div class="mb_l">
-                            <a href=""><img src="./images/hersheyM.PNG" alt=""></a>
+                            <a href="#!$"><img src="./images/hersheyM.png" alt=""></a>
 
                         </div>
                     </div>
@@ -112,15 +132,15 @@
                 <div class="inner content">
                     <div class="img_box">
                         <div class="web">
-                            <a href="">
-                                <img src="./images/T1W.PNG" alt="">
+                            <a href="https://wo0odychan.github.io/project06/" target="_blank">
+                                <img src="./images/T1W.png" alt="">
                             </a>
                         </div>
                         <div class="mb_r">
-                            <a href=""><img src="./images/T1M.PNG" alt=""></a>
+                            <a href="#@!"><img src="./images/T1M.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="txt_box">
+                    <div class="txt_box pd">
                         <div class="tit">
                             <div class="bot">
                                 <h2>T1 Shop</h2>
@@ -128,15 +148,26 @@
                             </div>
                             <div class="tool">
                                 <ul>
-                                    <li><span>Tool</span> HTML, CSS, JavaScript-JQuery, Swiper, XEicon</li>
-                                    <li><span>Font</span> Noto Sans KR</li>
-                                    <li><span>Color</span></li>
+                                    <li><strong>Tool</strong><span>HTML, CSS, JavaScript-JQuery, Swiper, XEicon</span>
+                                    </li>
+                                    <li><strong>Font</strong><span>Noto Sans KR</span> </li>
+                                    <li><strong>Color</strong>
+                                        <span class="color co01"></span>
+                                        <span class="color co02"></span>
+                                        <span class="color co03"></span>
+                                    </li>
+                                    <li class="info">Info<p>카테고리로 분류한 상품들을 탭메뉴로 만들어 기존 사이트보다 쉽게 이용할 수 있게 만들었습니다.
+                                            상품 Hover시에 자세히보기, 장바구니, 공유 등의 버튼이 나오도록 하였습니다.
+                                            타 쇼핑몰과 달리 주 구매고객이 구단과 선수의 '팬'임을 인지해 선수 사진, 시즌 유니폼 빠른 구매에 중점을 두었습니다.
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="link">
-                                <div class="btn"><a href="">WEB</a></div>
-                                <div class="btn"><a href="">MOBILE</a></div>
-                                <div class="btn w"><a href="">FIGMA</a></div>
+                                <div class="btn"><a href="https://wo0odychan.github.io/project06/"
+                                        target="_blank">WEB</a></div>
+                                <!-- <div class="btn"><a href="">MOBILE</a></div> -->
+                                <!-- <div class="btn w"><a href="#!$">FIGMA</a></div> -->
                             </div>
                         </div>
                     </div>
@@ -152,26 +183,44 @@
                             </div>
                             <div class="tool">
                                 <ul>
-                                    <li><span>Tool</span> HTML, CSS, JavaScript-JQuery, Slick, Material Symbols</li>
-                                    <li><span>Font</span> Pretendard</li>
-                                    <li><span>Color</span></li>
+                                    <li><strong>Tool</strong><span>HTML, CSS, JavaScript-JQuery, Slick, Material-
+                                            Symbols</span></li>
+                                    <li><strong>Font</strong><span>Pretendard</span> </li>
+                                    <li><strong>Color</strong>
+                                        <span class="color co01"></span>
+                                        <span class="color co02"></span>
+                                        <span class="color co03"></span>
+                                        <span class="color co04"></span>
+                                        <span class="color co05"></span>
+                                    </li>
+                                    <li class="info">Info<p>
+                                            병원사이트라는 점과 주 사용자가 환자, 보호자일 것을 고려해 첫 시작페이지에 바로가기 버튼을 넣어 편리하고 빠른 이용을 할 수 있게
+                                            하였습니다. 안내란은 Grid를 사용해 한눈에 볼 수 있게 하였고 기존에 나누어져있던 뉴스소식, 건강정보 등은 탭메뉴로 줄여 한
+                                            섹션에 담아 기존
+                                            사이트를 재정리한다는 느낌으로 만들었습니다.
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="link">
-                                <div class="btn"><a href="">WEB</a></div>
-                                <div class="btn"><a href="">MOBILE</a></div>
-                                <div class="btn w"><a href="">FIGMA</a></div>
+                                <div class="btn"><a href="https://wo0odychan.github.io/project13/"
+                                        target="_blank">WEB</a></div>
+                                <!-- <div class="btn"><a href="">MOBILE</a></div> -->
+                                <div class="btn w"><a
+                                        href="https://www.figma.com/file/MZu4O4akS0gRnhGwJzzP4C/%EC%84%B8%EB%B8%8C%EB%9E%80%EC%8A%A4?type=design&node-id=0-1&mode=design&t=rG8ebnA9z0v5g0oL-0"
+                                        target="_blank">FIGMA</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="img_box">
+                    <div class="img_box od">
                         <div class="web">
-                            <a href="">
-                                <img src="./images/sevW.PNG" alt="">
+                            <a href="https://wo0odychan.github.io/project13/" target="_blank">
+                                <img src="./images/sevW.png" alt="">
                             </a>
                         </div>
                         <div class="mb_l">
-                            <a href=""><img src="./images/sevM.PNG" alt=""></a>
+                            <a href="#!$"><img src="./images/sevM.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -181,12 +230,12 @@
 
                     <div class="img_box">
                         <div class="web">
-                            <a href="">
-                                <img src="./images/moroW.PNG" alt="">
+                            <a href="https://wo0odychan.github.io/project12/" target="_blank">
+                                <img src="./images/moroW.png" alt="">
                             </a>
                         </div>
                         <div class="mb_r">
-                            <a href=""><img src="./images/moroM.PNG" alt=""></a>
+                            <a href="#!$"><img src="./images/moroM.png" alt=""></a>
                         </div>
                     </div>
                     <div class="txt_box">
@@ -197,15 +246,30 @@
                             </div>
                             <div class="tool">
                                 <ul>
-                                    <li><span>Tool</span> HTML, CSS, JavaScript-JQuery, XEicon</li>
-                                    <li><span>Font</span> Pretendard</li>
-                                    <li><span>Color</span></li>
+                                    <li><strong>Tool</strong><span>HTML, CSS, JavaScript-JQuery, XEicon</span></li>
+                                    <li><strong>Font</strong><span>Pretendard</span> </li>
+                                    <li><strong>Color</strong>
+                                        <span class="color co01"></span>
+                                        <span class="color co02"></span>
+                                        <span class="color co03"></span>
+                                        <span class="color co04"></span>
+                                    </li>
+                                    <li class="info">Info<p>
+                                            좋아하는 작가의 좋아하는 작품을 웹사이트로 만들고 싶어 Figma를 활용해 디자인/퍼블리싱한 사이트입니다. 네이버 스마트쇼핑으로
+                                            판매하던 제품들 중 대표 상품을 모아 해당 포인트 컬러로 섹션을 만들고
+                                            작가 SNS에 기재된 글귀, 소식 등을 추가해 카드형식으로 디자인하였습니다.
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="link">
-                                <div class="btn"><a href="">WEB</a></div>
-                                <div class="btn"><a href="">MOBILE</a></div>
-                                <div class="btn w"><a href="">FIGMA</a></div>
+                                <div class="btn"><a href="https://wo0odychan.github.io/project12/"
+                                        target="_blank">WEB</a></div>
+                                <!-- <div class="btn"><a href="">MOBILE</a></div> -->
+                                <div class="btn w"><a
+                                        href="https://www.figma.com/file/DDru9l6F3rOEmVv8fJAe6O/%EB%AA%A8%EB%A1%9C%ED%95%98%EB%82%98?type=design&node-id=0%3A1&mode=design&t=GccLT7Qj1DwkDccL-1"
+                                        target="_blank">FIGMA</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -221,26 +285,40 @@
                             </div>
                             <div class="tool">
                                 <ul>
-                                    <li><span>Tool</span> HTML, CSS, JavaScript-JQuery, Fullpage</li>
-                                    <li><span>Font</span> Pretendard</li>
-                                    <li><span>Color</span></li>
+                                    <li><strong>Tool</strong><span>HTML, CSS, JavaScript-JQuery, Fullpage, XEicon</span>
+                                    </li>
+                                    <li><strong>Font</strong><span>Noto Sans KR, Noto Serif KR</span> </li>
+                                    <li><strong>Color</strong>
+                                        <span class="color co01"></span>
+                                        <span class="color co02"></span>
+                                        <span class="color co03"></span>
+                                    </li>
+                                    <li class="info">Info<p>
+                                            가방, 키링 등을 판매하는 쇼핑몰을 매거진 형식으로 리디자인한 사이트입니다. Fullpage 플러그를 사용해
+                                            시그니처 상품을 큰 화면으로 감상하고 그에 따른 설명이 나오도록 하였고, 상품의 키치함을 살릴 수 있게 핑크색을 포인트로 잡았습니다.
+                                            풀페이지 특성 상 모바일 화면으로 불편할 수도 있기에 모바일로 접속했을 시에는 풀페이지가 작동하지 않게 코딩하였습니다.
+                                        </p>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="link">
-                                <div class="btn"><a href="">WEB</a></div>
-                                <div class="btn"><a href="">MOBILE</a></div>
-                                <div class="btn w"><a href="">FIGMA</a></div>
+                                <div class="btn"><a href="https://wo0odychan.github.io/project11/"
+                                        target="_blank">WEB</a></div>
+                                <!-- <div class="btn"><a href="">MOBILE</a></div> -->
+                                <div class="btn w"><a
+                                        href="https://www.figma.com/file/exo1TspYsAs7M3z7rI2gIk/%EA%B3%BC%EC%A0%9C?type=design&node-id=0%3A1&mode=design&t=Pvxm3CqSvlWHMOe4-1"
+                                        target="_blank">FIGMA</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="img_box">
+                    <div class="img_box od">
                         <div class="web">
-                            <a href="">
-                                <img src="./images/entreW.PNG" alt="">
+                            <a href="https://wo0odychan.github.io/project11/" target="_blank">
+                                <img src="./images/entreW.png" alt="">
                             </a>
                         </div>
                         <div class="mb_l">
-                            <a href=""><img src="./images/entreM.PNG" alt=""></a>
+                            <a href="#!$"><img src="./images/entreM.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -250,83 +328,228 @@
             </div>
         </section>
         <section class="section training">
-            <div class="inner content">
-                <div class="tit">
-                    <h2>TRAINING</h2>
-                </div>
-                <div class="tr_box">
-                    <figure>
-                        <img src="./images/hersheyW.PNG" alt="">
-                    </figure>
-                </div>
-                <div class="tr_box">
-                    <figure>
-                        <img src="./images/hersheyW.PNG" alt="">
-                    </figure>
-                </div>
-                <div class="tr_box">
-                    <figure>
-                        <img src="./images/hersheyW.PNG" alt="">
-                    </figure>
-                </div>
-                <div class="tr_box">
-                    <figure>
-                        <img src="./images/hersheyW.PNG" alt="">
-                    </figure>
-                </div>
-                <div class="tr_box">
-                    <figure>
-                        <img src="./images/hersheyW.PNG" alt="">
-                    </figure>
-                </div>
+            <!-- <div class=" tit">
+                <h2>TRAINING</h2>
+            </div> -->
 
+            <div class="list">
+                <div class="tab sec">
+                    <div class="content inner ">
+                        <div class="tab_menu">
+                            <ul>
+                                <li class="on"><strong>&#35; 베이직 &#35; 카시아_속초</strong></li>
+                                <li><strong>&#35; 그누보드 &#35; 깔끔이_청소</strong></li>
+                                <li><strong>&#35; rem &#35; 세종_독도전시관</strong></li>
+                                <li><strong>&#35; php &#35; 아웃백</strong></li>
+                                <li><strong>&#35; JavaScript &#35; 현대엘리베이터</strong></li>
+                            </ul>
+                        </div>
+                        <div class="trn">
+                            <ul class="tab_img">
+                                <li class="on">
+
+                                    <figure class="gls">
+                                        <a href="">
+                                            <img src="./images/tr01.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="txt_box gls">
+                                        <strong>카시아 속초</strong>
+                                        <p>기본적인 레이아웃으로 구성된 웹사이트입니다.</p>
+                                    </div>
+                                    <div class="cate_box gls">
+                                        <dl>
+                                            <dt>PORTFOLIO</dt>
+                                            <dt>TRAINING</dt>
+                                            <dd>CASSIA</dd>
+                                        </dl>
+                                        <div class="btn_s">
+                                            <strong><a href="">WEB</a></strong>
+                                            <a href="">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <figure class="gls">
+                                        <a href="">
+                                            <img src="./images/tr02.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="txt_box gls">
+                                        <strong>깔끔이 청소</strong>
+                                        <p>그누보드를 활용하여 서브 페이지도 제작되어있는 사이트입니다.</p>
+                                    </div>
+                                    <div class="cate_box gls">
+                                        <dl>
+                                            <dt>PORTFOLIO</dt>
+                                            <dt>TRAINING</dt>
+                                            <dd>CLEAN</dd>
+                                        </dl>
+                                        <div class="btn_s">
+                                            <strong><a href="">WEB</a></strong>
+                                            <a href="">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure class="gls">
+                                        <a href="">
+                                            <img src="./images/tr03.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="txt_box gls">
+                                        <strong>세종 독도전시관</strong>
+                                        <p>rem으로 제작된 사이트입니다.</p>
+                                    </div>
+                                    <div class="cate_box gls">
+                                        <dl>
+                                            <dt>PORTFOLIO</dt>
+                                            <dt>TRAINING</dt>
+                                            <dd>DOKDO</dd>
+                                        </dl>
+                                        <div class="btn_s">
+                                            <strong><a href="">WEB</a></strong>
+                                            <a href="">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure class="gls">
+                                        <a href="">
+                                            <img src="./images/tr04.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="txt_box gls">
+                                        <strong>아웃백</strong>
+                                        <p>php를 활용해 제작된 사이트입니다.</p>
+                                    </div>
+                                    <div class="cate_box gls">
+                                        <dl>
+                                            <dt>PORTFOLIO</dt>
+                                            <dt>TRAINING</dt>
+                                            <dd>OUTBACK</dd>
+                                        </dl>
+                                        <div class="btn_s">
+                                            <strong><a href="">WEB</a></strong>
+                                            <a href="">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <figure class="gls">
+                                        <a href="">
+                                            <img src="./images/tr05.png" alt="">
+                                        </a>
+                                    </figure>
+                                    <div class="txt_box gls">
+                                        <strong>현대엘리베이터</strong>
+                                        <p>SCSS와 JavaScript로 제작된 사이트입니다.</p>
+                                    </div>
+                                    <div class="cate_box gls">
+                                        <dl>
+                                            <dt>PORTFOLIO</dt>
+                                            <dt>TRAINING</dt>
+                                            <dd>HYUNDAI</dd>
+                                        </dl>
+                                        <div class="btn_s">
+                                            <strong><a href="">WEB</a></strong>
+                                            <a href="">
+                                                <span class="material-symbols-outlined">
+                                                    arrow_forward
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_bg">
+                    <div class="ftr gls"></div>
+                </div>
             </div>
         </section>
-        <section class="section profile">
-            <div class="inner content d_flex">
+        <section class="section profile sec ">
+            <div class="inner content">
                 <div class="left">
                     <figure>
                         <img src="./images/woojin02.jpg" alt="">
                     </figure>
+                    <div class="flower">
+                        <span class="material-symbols-outlined f01">
+                            deceased
+                        </span>
+                        <span class="material-symbols-outlined f02">
+                            deceased
+                        </span>
+                        <span class="material-symbols-outlined f03">
+                            deceased
+                        </span>
+                        <span class="material-symbols-outlined f04">
+                            deceased
+                        </span>
+                    </div>
                 </div>
                 <div class="right">
-                    <div class="pr">
-                        <h2>PROFILE</h2>
-                        <strong>
-                            왕우진 / WANG WOO JIN
-                        </strong>
-                        <span>웹 퍼블리셔</span>
-                        <p>1999.07.16</p>
-                        <address>부산 서구 보수대로 154번길 ***</address>
+                    <div class="top">
+                        <div class="pr">
+                            <h2>PROFILE</h2>
+                            <strong>
+                                왕우진 / WANG WOO JIN
+                            </strong>
+                            <span>웹 퍼블리셔</span>
+                            <p>1999.07.16</p>
+
+
+                        </div>
+                        <ul class="edu">
+                            <strong>EDUCATION</strong>
+                            <li><span>2022. 02</span> 부경대학교 일본어문학전공 졸업</li>
+                            <li><span>2023. 09</span> 그린컴퓨터아카데미 UI/UX 디자인 퍼블리싱 과정 수료</li>
+                        </ul>
 
                     </div>
-                    <ul class="edu">
-                        <strong>EDUCATION</strong>
-                        <li><span>2022. 02</span> 부경대학교 일본어문학전공 졸업</li>
-                        <li><span>2023. 09</span> 그린컴퓨터아카데미 UI/UX 디자인 퍼블리싱 과정 수료</li>
-                    </ul>
-                    <ul class="call">
-                        <li><span class="material-symbols-outlined">
-                                phone_iphone
-                            </span>
-                            <a href="tel: 010-4843-7817">010-4843-7817</a>
-                        </li>
-                        <li><span class="material-symbols-outlined">
-                                send
-                            </span>
-                            <a href="">wo0ody@kakao.com</a>
-                        </li>
-                        <li><span class="material-symbols-outlined">
-                                link
-                            </span><a href="https://github.com/wo0odychan" target="_blank">GitHub</a></li>
-                    </ul>
+                    <div class="call">
+                        <strong>CONTACT</strong>
+                        <ul>
+                            <li><span class="material-symbols-outlined">
+                                    phone_iphone
+                                </span>
+                                <a href="tel: 010-4843-7817">010-4843-7817</a>
+                            </li>
+                            <li><span class="material-symbols-outlined">
+                                    send
+                                </span>
+                                <a href="">wo0ody@kakao.com</a>
+                            </li>
+                            <li><span class="material-symbols-outlined">
+                                    link
+                                </span><a href="https://github.com/wo0odychan" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
                 </div>
         </section>
     </div>
 
-    <footer class="footer">
-        우디
-    </footer>
 </body>
 
 </html>
